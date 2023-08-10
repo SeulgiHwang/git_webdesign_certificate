@@ -16,6 +16,8 @@ html{
 
 a{
     text-decoration: none;
+    margin:0;
+    border:0;
 }
 
 header{
@@ -43,27 +45,29 @@ body{
 }
 
 .menu{
-    float:left;;
-    margin-top: -40px;
-    margin-left: -30px;
-    /* display: block; */
+    float:left;
+    position:absolute;
+    top: 100px;
+    left:110px;
+    z-index:1;
+    text-align: center;
+    
 }
 
 .navi>li{
-    background-color: green;
-    color:white;
-    margin-top: -15px;
-    text-align: center;
-    font-weight: bold;
-    /* display: block; */
+    width: 180px;
+    position: relative;
 }
 
 .navi>li>a{
     float:left;
     width: 180px;
-    height: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
     background-color: black;
     color:#ffffff;
+    display:block;
 }
 
 .navi>li>a:hover{
@@ -73,14 +77,11 @@ body{
 .submenu{
     float:left;
     text-align: left;
-    right:-180px;
-    position: relative;
+    right:-150px;
+    position: absolute;
     width: 120px;
-    height: 120px;
+    height: 200px;
     background-color: black;
-    
-  
-
     display: none;
 }
 
@@ -92,82 +93,236 @@ body{
     float:left;
     width: 180px;
     height: 30px;;
-    display: block;
+    display: inline-block;
     color:white;
-    border:0;
-    margin:0;
 }
 
 .submenu>li>a:hover{
     background-color: #ffffff;
     color:black;
 }
+
 .imgslide{
-    background-color: green;
-    float:left;
+    float:right;
     width: 800px;
     height: 350px;
+    position:relative;
+    overflow: hidden;
+}
+
+.slide{
+    width: 2400px;
+}
+
+.slide ul li{
+    float:left;
+    width: 800px;
+    margin-left: -40px;
+}
+.slide span{
+    position:absolute;
+    background-color: rgba(10,10,10,0.5);
+    color:white;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    line-height: 100px;
+    margin-top: 100px;
+    margin-left: 200px;
+
 }
 
 .contents{
-    background-color: blue;
     float:left;
     width: 800px;
     height: 200px;
 }
 
 .notice{
-    background-color: aqua;
+    background-color: #ffffff;
     float:left;
-    width: 300px;
+    width: 280px;
     height: 200px;
 }
 
+h4{
+    float:left;
+    height: 30px;
+    line-height: 40px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.notice ul{
+    float:left;
+    padding-left:0;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.notice li a{
+    float:left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.notice li a:hover{
+    background-color: #ffffff;
+}
+
+.notice span{
+    float:right;
+    padding:0;
+    margin-left: 13px;
+    margin-right: 0px;
+    font-weight: bold;
+
+}
 .gallery{
-    background-color: pink;
+    background-color: #ffffff;
     float: left;
     width: 300px;
     height: 200px;
+    position:relative;
+}
+
+.gallery ul{
+    width: 100%;
+    height: 60px;
+    float:left;
+    margin-left:10px;
+    padding:0;
+    margin-top: 40px;
+
+}
+.gallery ul img {
+    float:left;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    position:relative;
 }
 
 .shortcut{
-    background-color: blueviolet;
     float:right;
     width: 200px;
     height: 200px;
-    margin-top: -21px;
 }
 
+.shorcut img{
+    width: 100%;
+    height: 100%;
+}
+
+.shortcut span{
+    background-color:rgba(255,255,255,0.5);
+    float:left;
+    width: 100px;
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    color : black;
+    font-weight: bold;
+    position:absolute;
+    z-index:11px;
+    margin-top: 80px;
+    margin-left: -150px;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    z-index:1;
+    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    display:none;
+}
+.modal.active{
+    display:block;
+}
+.modal_up{
+    background-color: #ffffff;
+    width: 360px;
+    height: 250px;
+    margin-top: 200px;
+    padding:21px;
+}
+
+.modal_name{
+    /* color:white; */
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+.modal_body{
+    /* color:white; */
+    float:left;
+    text-align: center;
+    line-height: 25px;
+}
+
+.btn{
+    width: 80px;
+    height: 20px;
+    background-color: #cccccc;
+    display: inline-block;
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 180px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+
+
 footer{
-    background-color: black;
+    background-color: #30eff3;
     float:left;
     width: 800px;
     height: 100px;
 }
 
 .btlogo{
-    background-color: #ffffff;
     float:left;
     width: 200px;
     height: 100px;
 }
 
+.btlogo img{
+    float:left;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
 .wrap_bt{
     float:left;
-    background-color: pink;
     width: 600px;
     height: 100px;
 }
 .btmenu{
-    background-color: darkgrey;
-    float:left;
-    width: 600px;
-    height: 50px;
-}
-.copyright{
-    background-color: goldenrod;
     float:right;
     width: 600px;
     height: 50px;
+    position: absolute;
+}
+
+
+.btmenu a{
+    float:left;
+    line-height: 50px;
+    margin-left: 60px;
+    display:block;
+    
+}
+.copyright{
+    float:right;
+    width: 600px;
+    height: 50px;
+    position:absolute;
+    line-height: 130px;
+    margin-left: 80px;
 
 }
