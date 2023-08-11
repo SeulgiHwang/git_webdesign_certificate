@@ -99,11 +99,11 @@ header{
 
 .imgslide a{
     display:block;
-    position:absolute;s
+    position:absolute;
 
 }
 .imgtext{
-    background-color: rgba(40,40,40,0.8);
+    background-color:rgba(40,40,40,0.8);
     float:left;
     width: 300px;
     height: 60px;
@@ -118,15 +118,172 @@ header{
 }
 
 .contents{
-    background-color: yellow;
     float:left;
     width: 800px;
     height: 200px;
 }
 
+h4{
+    float:left;
+    width: 100%;
+    /* margin-left: 5px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    tab-size: 18px;
+    display: inline-block;
+    font-weight: bold;
+
+}
+.notice{
+    float:left;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.notice  a{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.notice li span{
+    float:right;
+}
+
+.notice li:nth-child(2n){
+    background-color: #cccccc;
+}
+
+.gallery{
+    float:left;
+    width: 290px;
+    height: 200px;
+    margin-left: 10px;
+    display: block;
+    margin-top: 30px;
+}
+
+.gallery img{
+    float:left;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.shortcut{
+    float:left;
+    width: 200px;
+    height: 200px;
+}
+
+.shortcut span{
+    float:left;
+    background-color: rgba(10,10,10,0.3);
+    z-index:2;
+    position:absolute;
+    margin-left: -130px;
+    margin-top: 80px;
+    font-weight: bold;
+    color:#ffffff;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    background-color:rgba(0,0,0,0.6);
+    z-index:100;
+    position:absolute;
+    display: none;
+}
+
+.modalup{
+    background-color: #ffffff;
+    width: 40%;
+    height: 15%;
+    margin-top: 15%;
+}
+
+.modaltitle{
+    color:black;
+    text-align: center;
+    padding-top:10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.modaltext{
+    color:black;
+    text-align: center;
+}
+
+.btn{
+    float:right;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.modal.active{
+    display: block;
+}
+
 footer{
-    background-color: green;
+    background-color: #cccccc;
     float:left;
     width: 800px;
     height: 100px;
+}
+
+.foot{
+    width: 800px;
+    height: 100px;
+    position:absolute;
+
+}
+.copyright{
+    /* background-color: yellow; */
+    float:left;
+    width: 620px;
+    height: 100px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.other{
+    float:left;
+    width: 180px;
+    height: 100px;
+    display:inline-block;
+    position:absolute;
+
+}
+
+.sns{
+    float:left;
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    position:relative;
+}
+
+.sns ul li{
+    display: inline-block;
+}
+.sns img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    padding:1px;
+}
+
+.familysite{
+    background-color: green;
+    float:right;
+    width: 100%;
+    height: 50px;
+}
+
+select{
+    float:right;
+    margin-right: 35px;
 }
